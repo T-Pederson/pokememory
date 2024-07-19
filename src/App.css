@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+button {
+  background: #ff4742;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 1em 0 0.33em 0;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+img {
+  width: 200px;
+  border: 3px solid black;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+p {
+  font-size: 1.5em;
+  margin: 0 0 1em 0;
+  font-weight: bold;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+@media (width < 860px) {
+  #board {
+    grid-template-columns: auto auto auto;
+  }
+
+  h1 {
+    margin-top: 0.33em;
+  }
+
+  img {
+    width: 100px;
+  }
+}
